@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Listening Stats Dashboard</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Music Stats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-6 bg-white p-4 rounded-4 ">
+                <div class="card bg-light rounded-4 ">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark">Top Artist</h5>
+                        <p class="card-text text-dark">Taylor Swift</p>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <canvas id="topArtistsChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-white bg-light mb-3 rounded-4 p-5">
+                    <div class="card-body text-black">
+                        <h5 class="card-title fw-bold ">Total Listening Time</h5>
+                        <p class="card-text">120 Hours</p>
+                    </div>
+                </div>
+                <div class="card bg-white text-black rounded-4 p-4">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-white">Monthly Listening Trends</h5>
+                    </div>
+                    <canvas id="listeningTrendsChart" class="mt-4"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-5">
+            <div class="col-md-7 bg-white p-4 rounded-4 me-3">
+                <div class="card  bg-light mb-3 rounded-4">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Favorite Genre</h5>
+                        <p class="card-text">Pop</p>
+                    </div>
+                </div>
+                <canvas id="genreChart" class=""></canvas>
+            </div>
+            <div class="col-4 bg-white p-4 rounded-4 ">
+                <div class="card  bg-light rounded-4 ">
+                    <div class="card-body">
+                        <h5 class="card-title p-2 fw-bold">Favorite Song</h5>
+                    </div>
+                </div>
+                <div class="card  bg-light rounded-4  mt-4">
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Song 1 - Artist A</li>
+                        <li class="list-group-item">Song 2 - Artist B</li>
+                        <li class="list-group-item">Song 3 - Artist C</li>
+                        <li class="list-group-item">Song 4 - Artist D</li>
+                        <li class="list-group-item">Song 5 - Artist E</li>
+                        <li class="list-group-item">Song 6 - Artist F</li>
+                        <li class="list-group-item">Song 7 - Artist G</li>
+                        <li class="list-group-item">Song 8 - Artist H</li>
+                        <li class="list-group-item">Song 9 - Artist I</li>
+                        <li class="list-group-item">Song 10 - Artist J</li>
+                        <li class="list-group-item">Song 11 - Artist K</li>
+                        <li class="list-group-item">Song 12 - Artist L</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

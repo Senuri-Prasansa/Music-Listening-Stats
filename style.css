@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to right, #c2e998, #4cd57c);
+}
+.card {
+    border-radius: 10px;
+}
+.list-group-item.active {
+    background-color: #343a40;
+    border-color: #343a40;
+}
